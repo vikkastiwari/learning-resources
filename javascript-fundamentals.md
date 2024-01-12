@@ -65,7 +65,7 @@ It will return a callback function hence to execute that we added parentheses at
 </details>
 
 <details>
-  <summary>V8 Engine & Hot Functions | </summary>
+  <summary>V8 Engine & Hot Functions</summary>
 
   When V8 compiles your JavaScript code, its parser generates something called an abstract syntax tree. Ignition, V8’s baseline compiler or interpreter, generates bytecode from this syntax tree. True to its just-in-time compilation nature, Ignition compiles JavaScript code, runs it, compiles it, runs it, back and forth, over and over again.
 
