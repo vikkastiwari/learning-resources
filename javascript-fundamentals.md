@@ -63,3 +63,20 @@ When a Symbol is used as a property key, it doesn’t clash with other property 
   ```
 It will return a callback function hence to execute that we added parentheses at the end. AKA IFFE (Immediately Invoked Function Expression)
 </details>
+
+<details>
+  <summary>V8 Engine | Hot Functions | Inline Caching</summary>
+
+  When V8 compiles your JavaScript code, its parser generates something called an abstract syntax tree. Ignition, V8’s baseline compiler or interpreter, generates bytecode from this syntax tree. True to its just-in-time compilation nature, Ignition compiles JavaScript code, runs it, compiles it, runs it, back and forth, over and over again.
+
+During the runtime, the bytecode is analyzed and the engine identifies the parts (“hot functions”) that can be re-compiled for optimal performance, sending that code to TurboFan, which is V8’s optimizing compiler. It’s only because of just-in-time compilation that the engine is able to identify these so-called ‘**hot functions**’ because of just-in-time compilation.
+
+  1. Interpreter is called “Ignition”.
+  2. Optimizing compiler is called “TurboFan”.
+  3. Apart from Parser, there is a “pre-parser” that checks for syntax and tokens
+  4. “Sparkplug” is introduced which is present between “Ignition” & “TurboFan” which is also called Fast Compiler.
+
+![V8 Enginer](https://github.com/vikkastiwari/learning-resources/assets/51874681/e2175c05-31df-4f6d-a4b4-05d6c82faf69)
+
+
+</details>
