@@ -37,3 +37,17 @@
   </html>
   ```
 </details>
+
+<details>
+  <summary>2. Symbol</summary>
+  In JavaScript, a Symbol is a primitive data type introduced in ECMAScript 6 (ES6) that represents a unique and immutable value.
+  It is often used as an identifier for object properties to avoid name collisions
+  
+```
+const mySymbol = Symbol('key');
+   const obj = {
+       [mySymbol]: 'value'
+   };
+```
+When a Symbol is used as a property key, it doesn’t clash with other property keys, including string keys.
+</details>
