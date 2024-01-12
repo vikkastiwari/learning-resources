@@ -1,7 +1,7 @@
 ## Javascript Fundamentals
 
 <details>
-  <summary>1. Polyfill</summary>
+  <summary>Polyfill</summary>
   In software development, a polyfill is code that implements a feature of the development environment that does not natively support the feature.
   
   For your polyfills or override to work, it has to load first before your code. Don’t understand? Let’s say you trust your own implementation more the built-in APIs in JS, you need to load your custom implementation before your main code.
@@ -39,7 +39,7 @@
 </details>
 
 <details>
-  <summary>2. Symbol</summary>
+  <summary>Symbol</summary>
   In JavaScript, a Symbol is a primitive data type introduced in ECMAScript 6 (ES6) that represents a unique and immutable value.
   It is often used as an identifier for object properties to avoid name collisions
   
@@ -53,7 +53,7 @@ When a Symbol is used as a property key, it doesn’t clash with other property 
 </details>
 
 <details>
-  <summary>3. Currying</summary>
+  <summary>Currying</summary>
   ref: https://javascript.info/currying-partials
   
   Question:
@@ -76,7 +76,9 @@ During the runtime, the bytecode is analyzed and the engine identifies the parts
   3. Apart from Parser, there is a “pre-parser” that checks for syntax and tokens
   4. “Sparkplug” is introduced which is present between “Ignition” & “TurboFan” which is also called Fast Compiler.
 
-![V8 Enginer](https://github.com/vikkastiwari/learning-resources/assets/51874681/e2175c05-31df-4f6d-a4b4-05d6c82faf69)
+  <div align="center">
+      <img width="500" src="https://github.com/vikkastiwari/learning-resources/assets/51874681/e2175c05-31df-4f6d-a4b4-05d6c82faf69" alt="v8 engine">
+  </div>
 
 
 </details>
