@@ -2,6 +2,7 @@
 
 <details>
   <summary>Hoisting</summary>
+  
   Hoisting gives us an advantage in that variables and functions can be accessed before they are declared. Function expressions and arrow functions cannot be hoisted. The sequence of variable declaration and initialization or the lifecycle of a variable is as follows: Declaration -> Initialization -> Assignment.
 
   For example: `let sayHi = function ( ) { alert ( "Hello" ) ; } ;` Here we can see a variable sayHi getting a value, the new function, created as `function() { alert("Hello"); }` . As the function creation happens in the context of the assignment expression (to the right side of = ), this is a Function Expression.
