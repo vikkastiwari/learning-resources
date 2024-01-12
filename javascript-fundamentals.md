@@ -65,7 +65,7 @@ It will return a callback function hence to execute that we added parentheses at
 </details>
 
 <details>
-  <summary>V8 Engine | Hot Functions | Inline Caching</summary>
+  <summary>V8 Engine & Hot Functions | </summary>
 
   When V8 compiles your JavaScript code, its parser generates something called an abstract syntax tree. Ignition, V8’s baseline compiler or interpreter, generates bytecode from this syntax tree. True to its just-in-time compilation nature, Ignition compiles JavaScript code, runs it, compiles it, runs it, back and forth, over and over again.
 
@@ -80,6 +80,11 @@ During the runtime, the bytecode is analyzed and the engine identifies the parts
       <img width="500" src="https://github.com/vikkastiwari/learning-resources/assets/51874681/e2175c05-31df-4f6d-a4b4-05d6c82faf69" alt="v8 engine">
   </div>
 
-Inline Caching - V8 engine or many other JavaScript engine does is that first they run the function normally as you would expect. But, after some time when the function is called repeatedly, they assume or they act smart and just equals the repeated function calls to what the function returns to save time and improve the efficiency or speed. In this case, they equals `printUserName(userName) = “Hello John Doe”` This is called or better known as Inline Caching.
+</details>
+
+<details>
+  <summary>Inline Caching</summary>
+
+  V8 engine or many other JavaScript engine does is that first they run the function normally as you would expect. But, after some time when the function is called repeatedly, they assume or they act smart and just equals the repeated function calls to what the function returns to save time and improve the efficiency or speed. In this case, they equals `printUserName(userName) = “Hello John Doe”` This is called or better known as Inline Caching.
 
 </details>
