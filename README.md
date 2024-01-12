@@ -2,6 +2,7 @@
 
 #### Javascript Fundamentals
  - [30-javascript-interview-questions](https://javascriptcentric.medium.com/top-30-javascript-interview-questions-and-answers-for-2024-7f1e2d1d0638)
+ - [100 javascript questions](https://www.youtube.com/watch?v=SFgppU2J8To&t=1s&ab_channel=CodeStepByStep)
  - [Namaste Javascript](https://www.youtube.com/watch?v=ZvbzSrg0afE&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=3&ab_channel=AkshaySaini)
  - [Javascript fundamentals](./javascript-fundamentals.md)
  - [Js coding questions](https://bigfrontend.dev/problem)
