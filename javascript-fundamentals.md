@@ -80,5 +80,6 @@ During the runtime, the bytecode is analyzed and the engine identifies the parts
       <img width="500" src="https://github.com/vikkastiwari/learning-resources/assets/51874681/e2175c05-31df-4f6d-a4b4-05d6c82faf69" alt="v8 engine">
   </div>
 
+Inline Caching - V8 engine or many other JavaScript engine does is that first they run the function normally as you would expect. But, after some time when the function is called repeatedly, they assume or they act smart and just equals the repeated function calls to what the function returns to save time and improve the efficiency or speed. In this case, they equals `printUserName(userName) = “Hello John Doe”` This is called or better known as Inline Caching.
 
 </details>
