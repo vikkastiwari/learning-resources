@@ -51,3 +51,15 @@ const mySymbol = Symbol('key');
 ```
 When a Symbol is used as a property key, it doesn’t clash with other property keys, including string keys.
 </details>
+
+<details>
+  <summary>3. Currying</summary>
+  ref: https://javascript.info/currying-partials
+  
+  Question:
+  
+  ```
+    add(1)(2)(3)…(n)()
+  ```
+It will return a callback function hence to execute that we added parentheses at the end. AKA IFFE (Immediately Invoked Function Expression)
+</details>
