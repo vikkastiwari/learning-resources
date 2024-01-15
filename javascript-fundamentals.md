@@ -1,6 +1,14 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Object.create() & Prototype</summary>
+  Object created from Object.create({}) --> will have a prototype object within
+
+  Object created from Object.create(null) --> will have not a prototype object within
+</details>
+
+
+<details>
   <summary>Hoisting</summary>
   
   Hoisting gives us an advantage in that variables and functions can be accessed before they are declared. Function expressions and arrow functions cannot be hoisted. The sequence of variable declaration and initialization or the lifecycle of a variable is as follows: Declaration -> Initialization -> Assignment.
