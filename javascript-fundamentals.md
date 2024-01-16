@@ -3,19 +3,25 @@
 <details>
   <summary>Enhanced Object Literals</summary>
 
-  Object literal enhancement is used to group variables from the global scope and form them into javascript objects. It is the process of restructuring or putting back together.
+  - Object literal enhancement is used to group variables from the global scope and form them into javascript objects. It is the process of restructuring or putting back together.
+  - We can also create object methods with object literal enhancement.
+  - `this` keyword can be used to access the object keys.
 
   ```
   // global variable declaration 
   var name = "Duke"; 
-  var color = "Brown"; 
-  var age = 5; 
-  
+  var age = 100; 
+  var sayHello = function(){ 
+    console.log("Hello, ",this.name); 
+  }
+
   // Using Object Literal Enhancement 
   // Combines all variables into a dog object 
-  var dog = {name, color, age}; 
-  console.log(dog); 
+  var ole = {name, age, sayHello};
+  console.log(ole); 
+  ole.sayHello();
   ```
+
 </details>
 
 <details>
