@@ -1,6 +1,13 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>weakmap and weakset</summary>
+  
+  - [weakmap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap#examples)
+  - [weakset](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+</details>
+
+<details>
   <summary>Object.create() & Prototype</summary>
   Object created from Object.create({}) --> will have a prototype object within
 
