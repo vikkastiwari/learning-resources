@@ -1,6 +1,24 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Enhanced Object Literals</summary>
+
+  Object literal enhancement is used to group variables from the global scope and form them into javascript objects. It is the process of restructuring or putting back together.
+
+  ```
+  // global variable declaration 
+  var name = "Duke"; 
+  var color = "Brown"; 
+  var age = 5; 
+  
+  // Using Object Literal Enhancement 
+  // Combines all variables into a dog object 
+  var dog = {name, color, age}; 
+  console.log(dog); 
+  ```
+</details>
+
+<details>
   <summary>Iterators and Generators</summary>
   
   Iterators and Generators bring the concept of iteration directly into the core language and provide a mechanism for customizing the behavior of for...of loops.
