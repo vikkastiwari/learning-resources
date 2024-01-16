@@ -22,6 +22,31 @@
   ole.sayHello();
   ```
 
+  When defining object methods, it is no longer necessary to use the function keyword. Object literal enhancement allows us to pull global variables into objects and reduces typing by making the function keyword unnecessary.
+
+  ```
+  // Old syntax 
+var driver1 = { 
+    name: "John", 
+    speed: 50, 
+    car:"Ferrari", 
+    speedUp: function(speedup){ 
+         this.speed = this.speed + speedup; 
+         console.log("new speed = "+ this.speed) 
+    } 
+} 
+  
+// New syntax without function keyword 
+const driver2 = { 
+    name: "Jane", 
+    speed: 60, 
+    car:"McLaren", 
+    speedUp(speedup){ 
+         this.speed = this.speed + speedup; 
+         console.log("new speed = "+ this.speed) 
+    } 
+} 
+  ```
 </details>
 
 <details>
