@@ -1,6 +1,14 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Iterators and Generators</summary>
+  
+  Iterators and Generators bring the concept of iteration directly into the core language and provide a mechanism for customizing the behavior of for...of loops.
+
+  [Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+</details>
+
+<details>
   <summary>weakmap and weakset</summary>
   
   - [weakmap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap#examples)
