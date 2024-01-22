@@ -1,6 +1,30 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Factory function</summary>
+  
+  A factory function in JavaScript is a function that returns an object. It is a pattern used to create objects in a straightforward and organized manner. Instead of using constructor functions and the new keyword to create new objects, a factory function encapsulates the object creation process and returns a new object.
+
+  ```
+  function createPerson(name, age) {
+  return {
+    name: name,
+    age: age,
+    greet: function() {
+      return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+  };
+}
+
+const person1 = createPerson('Alice', 25);
+const person2 = createPerson('Bob', 30);
+
+console.log(person1.greet()); // Output: Hello, my name is Alice and I am 25 years old.
+console.log(person2.greet()); // Output: Hello, my name is Bob and I am 30 years old.
+  ```
+</details>
+
+<details>
   <summary>Default Parameters</summary>
 
   In JavaScript, function parameters default to undefined. However, it's often useful to set a different default value. This is where default parameters can help.
