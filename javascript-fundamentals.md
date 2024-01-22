@@ -1,6 +1,18 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Default Parameters</summary>
+
+  In JavaScript, function parameters default to undefined. However, it's often useful to set a different default value. This is where default parameters can help.
+
+  ```
+  function fnName(param1 = defaultValue1, /* …, */ paramN = defaultValueN) {
+    // …
+  }
+  ```
+</details>
+
+<details>
   <summary>Enhanced Object Literals</summary>
 
   - Object literal enhancement is used to group variables from the global scope and form them into javascript objects. It is the process of restructuring or putting back together.
