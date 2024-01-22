@@ -1,6 +1,18 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>
+     Deep copy ways
+  </summary>
+
+  - Json.string and Json.parse
+  - Object.create()
+  - Spread Operator (Not for nested object)
+  - structuredClone
+  - Recursion
+</details>
+
+<details>
   <summary>Factory function</summary>
   
   A factory function in JavaScript is a function that returns an object. It is a pattern used to create objects in a straightforward and organized manner. Instead of using constructor functions and the new keyword to create new objects, a factory function encapsulates the object creation process and returns a new object.
