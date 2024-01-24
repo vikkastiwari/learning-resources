@@ -35,7 +35,7 @@ The execution context is created during the creation phase. The following things
   - Json.string and Json.parse
   - Object.create()
   - Spread Operator (Not for nested object)
-  - structuredClone
+  - [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
   - Recursion
 </details>
 
