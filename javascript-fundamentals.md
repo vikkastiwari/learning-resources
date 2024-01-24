@@ -1,6 +1,12 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Priority of execution of callback, promise, setTimeout, process.nextTick()</summary>
+
+  **callback(Regular callbacks) < setTimeout < promise < process.nextTick()**
+</details>
+
+<details>
   <summary>Execution Stack</summary>
 
   It is also known as the “call stack,” a LIFO (Last in, First out) data structure that stores all the execution context of the function calls that are in progress. When a function is called, a new execution context is created and pushed onto the stack. When the function completes, its context is popped off the stack.
