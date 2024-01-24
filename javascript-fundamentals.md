@@ -29,7 +29,7 @@ The execution context is created during the creation phase. The following things
 
 <details>
   <summary>
-     Deep copy ways
+     Ways to clone an Object - Shallow & Deep copy 
   </summary>
 
   - Json.string and Json.parse
