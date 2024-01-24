@@ -1,6 +1,14 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Event flow - Event bubbling and event capturing</summary>
+  
+  - Event Capturing Phase: When you click the button, the event starts its journey from the top (the root of the document) and moves down to the target element. In this case, it travels from the document’s root to the <div> (parent element), then to the <button> (child element). This is called the capturing phase.
+ - Event Target Phase: The event reaches the target element, which is the <button> in this case.
+ - Event Bubbling Phase: After reaching the target, the event starts bubbling up. It goes from the <button> back to the <div> and eventually to the root of the document. This is called the bubbling phase.
+</details>
+
+<details>
   <summary>Object.create() vs Object.assign()</summary>
 
   - The [Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) static method creates a new object, using an existing object as the prototype of the newly created object.
