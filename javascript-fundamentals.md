@@ -1,6 +1,13 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Object.create() vs Object.assign()</summary>
+
+  - The [Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) static method creates a new object, using an existing object as the prototype of the newly created object.
+  - The [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) static method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.
+</details>
+
+<details>
   <summary>Priority of execution of callback, promise, setTimeout, process.nextTick()</summary>
 
   **callback(Regular callbacks) < setTimeout < promise < process.nextTick()**
