@@ -1,6 +1,19 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Execution Stack</summary>
+
+  It is also known as the “call stack,” a LIFO (Last in, First out) data structure that stores all the execution context of the function calls that are in progress. When a function is called, a new execution context is created and pushed onto the stack. When the function completes, its context is popped off the stack.
+
+The engine executes the function whose execution context is at the top of the stack. When this function completes, its execution stack is popped off from the stack, and the control reaches the context below it in the current stack.
+
+The execution context is created during the creation phase. The following things happen during the creation phase:
+
+- LexicalEnvironment component is created.
+- VariableEnvironment component is created.
+</details>
+
+<details>
   <summary>Seal and freeze methods</summary>
   
   The Object.freeze() static method freezes an object. Freezing an object prevents extensions and makes existing properties non-writable and non-configurable. A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned. freeze() returns the same object that was passed in.
