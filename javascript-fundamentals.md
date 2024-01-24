@@ -33,7 +33,7 @@ The execution context is created during the creation phase. The following things
   </summary>
 
   - Json.string and Json.parse
-  - Object.create()
+  - [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#examples)
   - Spread Operator (Not for nested object)
   - [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
   - Recursion
