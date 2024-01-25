@@ -1,6 +1,30 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>z = [99, 78, 56, 32][1, 2, 3]; --> What z will log?</summary>
+
+  ```
+
+  z = [99, 78, 56, 32][1, 2, 3];
+  It will transform to
+  z = [99, 78, 56, 32][3];
+  and output will be
+  o/p: 32
+  ```
+
+  Exaplanation:
+  ```
+
+  a = 1,2,3,4;
+  It will log
+  o/p: 4 - The iterator reads it from left to right - so latest value is 4.
+  ```
+  Similarly its happening in the above case.
+  
+
+</details>
+
+<details>
   <summary>Event Delegation</summary>
 
   Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
