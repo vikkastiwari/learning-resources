@@ -1,6 +1,28 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Event Delegation</summary>
+
+  Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+
+  So instead of binding events to all childs elements we prefer binding the event to only parent element and the behaviour remains exact same due to event bubbling.
+  ```
+
+  var form = document.querySelector("#registration-form");
+  // Listen for changes to fields inside the form
+  form.addEventListener(
+    "input",
+    function (event) {
+      // Log the field that was changed
+      console.log(event.target);
+    },
+    false
+  );
+  ```
+
+</details>
+
+<details>
   <summary>Event flow - Event bubbling and event capturing</summary>
   
   - Event Capturing Phase: When you click the button, the event starts its journey from the top (the root of the document) and moves down to the target element. In this case, it travels from the document’s root to the <div> (parent element), then to the <button> (child element). This is called the capturing phase.
