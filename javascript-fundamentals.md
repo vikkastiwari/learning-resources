@@ -9,7 +9,9 @@
 <details>
   <summary>What are server sent events?</summary>
 
+  Developing a web application that uses server-sent events is straightforward. You'll need a bit of code on the server to stream events to the front-end, but the client side code works almost identically to websockets in part of handling incoming events. This is a one-way connection, so you can't send events from a client to a server.
   
+  [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#receiving_events_from_the_server)
 </details>
 
 <details>
