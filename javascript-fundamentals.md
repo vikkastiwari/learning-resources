@@ -1,6 +1,18 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>What is ployfill?</summary>
+
+  
+</details>
+
+<details>
+  <summary>What are server sent events?</summary>
+
+  
+</details>
+
+<details>
   <summary>z = [99, 78, 56, 32][1, 2, 3]; --> What z will log?</summary>
 
   ```
