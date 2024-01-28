@@ -40,7 +40,12 @@
 <details>
   <summary>Web Workers</summary>
 
-  
+  - Concurrency: Web Workers are a browser feature that allows you to run JavaScript code in the background, separate from the main browser thread. This enables concurrent execution of tasks without blocking the user interface.
+  - Use Cases: Web Workers are commonly used for tasks that are computationally intensive or time-consuming, such as data processing, image manipulation, or complex calculations. By running these tasks in a separate thread, they don’t impact the responsiveness of the web page.
+  - Communication: Web Workers can communicate with the main thread using a messaging system. They can send and receive messages, allowing for coordination between the main thread and the worker.
+  - Browser Support: Web Workers are supported in most modern browsers.
+
+    [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 </details>
 
 <details>
