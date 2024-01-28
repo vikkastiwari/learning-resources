@@ -1,6 +1,22 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Compare 2 JSON objects in javascript</summary>
+
+  
+</details>
+
+<details>
+  <summary>Web Workers</summary>
+
+  
+</details>
+
+<details>
+  <summary>Service Workers</summary>
+</details>
+
+<details>
   <summary>What is ployfill?</summary>
 
   Polyfill, or even Polyfilla, is any code component that makes cutting-edge HTML, CSS or JavaScript functions available in older browsers that inherently lack support. In most cases, a polyfill is written in JavaScript.
