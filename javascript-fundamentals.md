@@ -3,7 +3,38 @@
 <details>
   <summary>Compare 2 JSON objects in javascript</summary>
 
+  - One simple way to compare two JSON objects is to use JSON.stringify to convert them into strings and then compare the strings.
+
+  ```
+
+  function areEqual(obj1, obj2) {
+    return JSON.stringify(obj1) === JSON.stringify(obj2);
+  }
+
+  const obj1 = { a: 1, b: { c: 2 } };
+  const obj2 = { a: 1, b: { c: 2 } };
+  console.log(areEqual(obj1, obj2)); // Output: true
+  ```
+  - You can use the Ramda library to compare two JSON objects as well. Ramda provides a function called equals for this purpose.
+  ```
+
+  const R = require('ramda');
   
+  const obj1 = { a: 1, b: { c: 2 } };
+  const obj2 = { a: 1, b: { c: 2 } };
+  
+  console.log(R.equals(obj1, obj2)); // Output: true
+  ```
+
+  - Another option is to use a library, such as Lodash, that provides a method for deep comparison of objects.
+
+  ```
+  const _ = require('lodash');
+  
+  const obj1 = { a: 1, b: { c: 2 } };
+  const obj2 = { a: 1, b: { c: 2 } };
+  console.log(_.isEqual(obj1, obj2)); // Output: true
+  ```
 </details>
 
 <details>
