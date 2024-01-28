@@ -10,6 +10,23 @@
   <summary>What are server sent events?</summary>
 
   Developing a web application that uses server-sent events is straightforward. You'll need a bit of code on the server to stream events to the front-end, but the client side code works almost identically to websockets in part of handling incoming events. This is a one-way connection, so you can't send events from a client to a server.
+
+- SSE provides a unidirectional flow of data from the server to the client. The server initiates the communication, sending updates to clients.
+- SSE uses a text-based protocol, which means that data sent from the server to the client is typically in a text format (usually JSON or plain text).
+- SSE handles reconnection automatically.
+- SSE establishes a persistent connection between the client and the server, allowing the server to send a stream of events to the client. Each event can have a unique type and data associated with it.
+- The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below.
+- List of events (onopen, onmessage,onerror) available for server-sent events.
+
+  ```
+
+  if (typeof EventSource !== "undefined") {
+    var source = new EventSource("sse_generator.js");
+    source.onmessage = function (event) {
+      document.getElementById("output").innerHTML += event.data + "<br>";
+    };
+  }
+  ```
   
   [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#receiving_events_from_the_server)
 </details>
