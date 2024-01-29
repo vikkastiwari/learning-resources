@@ -53,6 +53,11 @@
 
   Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available). They are intended, among other things, to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server. They will also allow access to push notifications and background sync APIs.
 
+  - A service worker is run in a worker context: it therefore has no DOM access.
+  - It runs on a different thread to the main JavaScript that powers your app, so it is non-blocking.
+  - It is designed to be fully async; as a consequence, APIs such as synchronous XHR and Web Storage can't be used inside a service worker.
+
+
   [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 </details>
 
