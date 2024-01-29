@@ -57,7 +57,8 @@
   - It runs on a different thread to the main JavaScript that powers your app, so it is non-blocking.
   - It is designed to be fully async; as a consequence, APIs such as synchronous XHR and Web Storage can't be used inside a service worker.
 
-
+  [Setting up service worker - demo app](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#demo)
+  
   [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 </details>
 
