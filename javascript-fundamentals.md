@@ -1,6 +1,15 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Polyfill implementation & Flattening array</summary>
+
+  - Implementing polyfill examples of race condition
+  - implementing flatning array and objects
+      
+    {a:1, b.c:2, b.c.d:3 ...} and so on
+</details>
+
+<details>
   <summary>== vs ===</summary>
   
   - 0 == false   // true
