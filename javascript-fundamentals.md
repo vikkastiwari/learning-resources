@@ -7,6 +7,8 @@
   - implementing flatning array and objects
       
     {a:1, b.c:2, b.c.d:3 ...} and so on
+
+   [Read more](https://medium.com/swlh/how-to-flatten-an-array-in-javascript-6b3fef075655)
 </details>
 
 <details>
