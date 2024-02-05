@@ -16,6 +16,7 @@
 - [All about HTML](https://html.spec.whatwg.org/multipage/)
 - [How to Learn CSS](https://www.smashingmagazine.com/2019/01/how-to-learn-css/)
 - [UI Engineer - Prep Resources](https://alphaayush.notion.site/alphaayush/2e13395deff94a428d45b3aa88dc7ee7?v=286316ab7b9e4992bf02ee35e60b40bd)
+- [UI Projects](https://github.com/ayush013/ui-bootcamp)
 
 #### Frameworks
 - [Angular](https://github.com/sudheerj/angular-interview-questions)
