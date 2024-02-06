@@ -1,12 +1,26 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Debouncing and Throttling</summary>
+
+  - To optimize performance, limit API calls by debouncing (waiting for a pause in typing) or throttling (limiting the frequency of requests).
+
+  - Debouncing is a technique where you delay the execution of a function until after a certain amount of time has passed.
+  - Debouncing waits for a certain time before invoking the function again.
+
+  - Throttling limits the number of times the function can be called over a certain period.
+  - Throttling ensures that the function is called at a regular interval, even if the event is triggered multiple times.
+</details>
+
+<details>
   <summary>Polyfill implementation & Flattening array</summary>
 
   - Implementing polyfill examples of race condition
   - implementing flatning array and objects
       
     {a:1, b.c:2, b.c.d:3 ...} and so on
+
+   [Read more](https://medium.com/swlh/how-to-flatten-an-array-in-javascript-6b3fef075655)
 </details>
 
 <details>

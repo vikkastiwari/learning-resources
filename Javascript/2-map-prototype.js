@@ -13,6 +13,25 @@ Array.prototype.customMap = function(callback) {
     return result;
 };
 
+
+Array.prototype.myMap = function(fn) {
+  let arr = this;
+  for(let i=0;i<arr.length;i++){
+    arr[i] = fn(arr.slice(0,i+1));
+  }
+  return arr;
+};
+
+function add(arr){
+  let sum = 0;
+  for(let i=0;i<arr.length;i++){
+    sum += arr[i];
+  }
+  return sum;
+}
+
 let arr = [1,2,3,4,5]
 let res = arr.customMap(item => item+1);
 console.log(res);
+
+
