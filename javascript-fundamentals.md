@@ -3,6 +3,8 @@
 <details>
   <summary>Debouncing and Throttling</summary>
 
+  - To optimize performance, limit API calls by debouncing (waiting for a pause in typing) or throttling (limiting the frequency of requests).
+
   - Debouncing is a technique where you delay the execution of a function until after a certain amount of time has passed.
   - Debouncing waits for a certain time before invoking the function again.
 
