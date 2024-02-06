@@ -1,6 +1,13 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Debouncing and Throttling</summary>
+
+  - Debouncing is a technique where you delay the execution of a function until after a certain amount of time has passed.
+  - Throttling ensures that the function is called at a regular interval, even if the event is triggered multiple times.
+</details>
+
+<details>
   <summary>Polyfill implementation & Flattening array</summary>
 
   - Implementing polyfill examples of race condition
