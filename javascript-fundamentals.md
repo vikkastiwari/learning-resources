@@ -4,6 +4,9 @@
   <summary>Debouncing and Throttling</summary>
 
   - Debouncing is a technique where you delay the execution of a function until after a certain amount of time has passed.
+  - Debouncing waits for a certain time before invoking the function again.
+
+  - Throttling limits the number of times the function can be called over a certain period.
   - Throttling ensures that the function is called at a regular interval, even if the event is triggered multiple times.
 </details>
 
