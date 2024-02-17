@@ -31,6 +31,7 @@
 #### System Design & Pattern
 - [Patterns](https://www.patterns.dev/resources)
 - [Clean Code](https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#introduction)
+- [WhatsApp](https://github.com/karanpratapsingh/system-design)
 
 #### Networking
 - [Networking Stack](https://hpbn.co/building-blocks-of-tcp/)
