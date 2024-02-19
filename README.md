@@ -6,6 +6,7 @@
 #### Javascript Fundamentals
  - [30-javascript-interview-questions](https://javascriptcentric.medium.com/top-30-javascript-interview-questions-and-answers-for-2024-7f1e2d1d0638)
  - [100 javascript questions](https://www.youtube.com/watch?v=SFgppU2J8To&t=1s&ab_channel=CodeStepByStep)
+ - [450 Javascript Questions](https://github.com/sudheerj/javascript-interview-questions)
  - [Flat Array](https://medium.com/swlh/how-to-flatten-an-array-in-javascript-6b3fef075655)
  - [Namaste Javascript](https://www.youtube.com/watch?v=ZvbzSrg0afE&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=3&ab_channel=AkshaySaini)
  - [Javascript fundamentals](./javascript-fundamentals.md)
@@ -31,6 +32,7 @@
 #### System Design & Pattern
 - [Patterns](https://www.patterns.dev/resources)
 - [Clean Code](https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#introduction)
+- [WhatsApp](https://github.com/karanpratapsingh/system-design)
 
 #### Networking
 - [Networking Stack](https://hpbn.co/building-blocks-of-tcp/)
