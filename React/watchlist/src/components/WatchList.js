@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import throttle from 'lodash/function/throttle'; 
 
 const Watchlist = ({stocks}) => {
   const [watchlist, setWatchlist] = useState([]);
