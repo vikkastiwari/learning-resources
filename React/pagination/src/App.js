@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './App.css';
 
 const API_URL = `https://api.punkapi.com/v2/beers`;
 const PERPAGE = 25;
@@ -37,8 +38,8 @@ export default function App() {
   }, [page, beerName]);
 
   return (
-    <div className="App">
-      <div>
+    <div >
+      <div className="pagination">
         <label htmlFor="page">Page</label>
         <select
           id="page"
@@ -71,10 +72,14 @@ export default function App() {
 
 const Beer = ({ name, tagline, image_url }) => {
   return (
-    <div>
-      <h2>{name}</h2>
-      <p>{tagline}</p>
-      <img src={image_url} alt={name} width="100px" />
+    <div className="beer">
+      <div>
+        <img src={image_url} alt={name} width="100px" />
+      </div>
+      <div>
+        <h2>{name}</h2>
+        <p>{tagline}</p>
+      </div>
     </div>
   );
 };
