@@ -1,0 +1,40 @@
+<p>GUEST LIST</p>
+
+<table>
+    <tr>
+      <th>Date</th>
+      <th>Breakfast</th>
+      <th>Lunch</th>
+      <th>Dinner</th>
+    </tr>
+    <tr class="tr-wrap" *ngFor="let guest of guestList">
+        <td>{{guest.date}}</td>
+        <td>
+            <table>
+                <tr *ngFor="let item of guest?.food">
+                    <td>
+                        {{item.breakFast}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr *ngFor="let item of guest?.food">
+                    <td>
+                        {{item.lunch}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr *ngFor="let item of guest?.food">
+                    <td>
+                        {{item.dinner}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

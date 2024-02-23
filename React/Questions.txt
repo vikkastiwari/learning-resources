@@ -1,3 +1,5 @@
+Redux
+
 🌲 What is Redux, and why is it used in React applications?
 🌲 Explain the core principles of Redux (Actions, Reducers, Store).
 🌲 What is a Redux Store? How is it different from React component state?
@@ -20,3 +22,36 @@
 🌲 How does memoization play a role in Redux selectors for performance optimization?
 🌲 Discuss the potential drawbacks of overusing Redux in small to medium-sized applications.
 🌲 Explain the differences between action creators and action types in Redux.
+
+
+React
+
+1) What is React? How does it differ from other JavaScript frameworks?
+ - Showcase your understanding of React and highlight the key features that set it apart in the JavaScript ecosystem.
+
+2) Explain the concept of Virtual DOM in React. Why is it important?
+ - Demonstrate your knowledge of how React optimizes the rendering process through the Virtual DOM and its impact on performance.
+
+3) What is Redux, and how does it manage the state in a React application?
+ - Showcase your understanding of Redux and its role in managing the state of a React application in a scalable and maintainable way.
+
+4) How does React Router work, and what are its key components?
+ - Discuss your expertise in client-side navigation using React Router and its components like `BrowserRouter` and `Link`.
+
+5) What are Higher Order Components (HOCs) in React?
+ - Explain how HOCs enhance code reusability and share examples of situations where you would use them in a React application.
+
+6) Describe the role of Middleware in Redux. Can you give an example of a Redux Middleware?
+ - Demonstrate your understanding of Redux Middleware and how it can be employed to perform tasks like logging or asynchronous operations.
+
+7) What is the purpose of the connect() function in React Redux?
+ - Showcase your familiarity with the `connect()` function, explaining how it connects a React component to the Redux store and facilitates state management.
+
+8) How does React handle forms? Explain controlled and uncontrolled components.
+ - Discuss your knowledge of form handling in React, covering controlled components and uncontrolled components and when to use each.
+
+9) What are React Hooks, and how do they differ from class components?
+ - Highlight your proficiency with React Hooks, emphasizing their role in functional components and the advantages they offer over class components.
+
+10) Can you compare React's Context API with Redux? When would you choose one over the other?
+ - Illustrate your understanding of when to use React's Context API or Redux for state management in a React application.

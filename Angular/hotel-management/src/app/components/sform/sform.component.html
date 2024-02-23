@@ -1,0 +1,12 @@
+<div class="form-container">
+    <form [formGroup]="hmForm" (ngSubmit)="onSubmit()">
+        <div>
+            <input type="text" placeholder="name" formControlName="name">
+            <input type="date" name="start" id="start" formControlName="startDate">
+            <input type="date" name="end" id="end" formControlName="endDate">
+        </div>
+        <div>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+</div>
