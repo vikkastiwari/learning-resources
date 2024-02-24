@@ -1,18 +1,36 @@
 𝗔𝗿𝗿𝗮𝘆𝘀 𝗮𝗻𝗱 𝗦𝘁𝗿𝗶𝗻𝗴𝘀:
 1. Find the missing number in an array of integers. ✅
 2. Implement an algorithm to rotate an array. ✅
-3. Check if a string is a palindrome.✅
+3. Check if a string is a palindrome. ✅
 4. Find the first non-repeating character in a string. ✅
 5. Implement an algorithm to reverse a linked list. ✅
 6. Merge two sorted arrays. ✅
 7. Implement a stack using arrays/linked list. ✅
-8. Write a program to remove duplicates from a sorted array.
+8. Write a program to remove duplicates from a sorted array. ✅
 
 𝗟𝗶𝗻𝗸𝗲𝗱 𝗟𝗶𝘀𝘁𝘀:
-1. Detect a cycle in a linked list.
-2. Find the intersection point of two linked lists.
+1. Detect a cycle in a linked list. ✅
+var hasCycle = function(head) {
+    let fast = head;
+    while(fast && fast.next){
+        head = head.next;
+        fast = fast.next.next;
+        if(head===fast) return true;
+    }
+    return false;
+};
+2. Find the intersection point of two linked lists. ✅
+Ref: https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/1092898/js-python-java-c-easy-o-1-extra-space-solution-w-visual-explanation/
+var getIntersectionNode = function(headA, headB) {
+    let a = headA, b = headB;
+    while(a!==b){
+        a = !a ? headB : a.next;
+        b = !b ? headA : b.next;
+    }
+    return b;
+};
 3. Reverse a linked list in groups of k.
-4. Implement a function to add two numbers represented by linked lists.
+4. Implement a function to add two numbers represented by linked lists. ✅
 5. Clone a linked list with next and random pointer.
 
 𝗧𝗿𝗲𝗲𝘀 𝗮𝗻𝗱 𝗕𝗶𝗻𝗮𝗿𝘆 𝗦𝗲𝗮𝗿𝗰𝗵 𝗧𝗿𝗲𝗲𝘀 (𝗕𝗦𝗧):
