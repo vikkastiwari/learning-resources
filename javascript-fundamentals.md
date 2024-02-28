@@ -1,6 +1,37 @@
 ## Javascript Fundamentals
 
 <details>
+  <summary>Promise vs Observable</summary>
+
+  Promise: A Promise represents a value (or the eventual completion or failure of an operation) that may not be available yet but will be resolved at some point in the future. It's a single value.
+  Observable: An Observable is a stream of values that arrive asynchronously over time. It can emit multiple values over time.
+  Single vs. Multiple Values:
+  
+  Promise: Represents a single value that will be available in the future, either successfully resolved or rejected with an error.
+  Observable: Can emit multiple values over time, including zero, one, or multiple values. It can represent any type of asynchronous data stream.
+  Cancellation:
+  
+  Promise: Once a Promise is created, it cannot be cancelled. It will resolve or reject eventually, but the operation cannot be interrupted.
+  Observable: Can be cancelled. Subscribers can unsubscribe from the Observable stream at any time, which can stop further emissions.
+  Lazy vs. Eager:
+  
+  Promise: Eager - starts executing its operation immediately after creation.
+  Observable: Lazy - the Observable does not start emitting values until it is subscribed to.
+  Error Handling:
+  
+  Promise: Uses the .then() and .catch() methods for handling success and error scenarios respectively.
+  Observable: Provides operators like subscribe(), next(), error(), and complete() for handling emissions, errors, and completion. It also provides operators for error handling like catchError().
+  Functional Programming:
+  
+  Promise: Typically used with imperative programming style.
+  Observable: Supports functional programming paradigms like mapping, filtering, reducing, etc. through various operators provided by libraries like RxJS.
+  Support and Ecosystem:
+  
+  Promise: Part of the JavaScript language since ES6, widely supported in modern browsers and Node.js.
+  Observable: Observable is not native to JavaScript but is provided by libraries like RxJS or the built-in Observable in modern JavaScript frameworks like Angular.
+</details>
+
+<details>
   <summary>Debouncing and Throttling</summary>
 
   - To optimize performance, limit API calls by debouncing (waiting for a pause in typing) or throttling (limiting the frequency of requests).
