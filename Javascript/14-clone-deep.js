@@ -12,6 +12,6 @@ function cloneDeep(obj) {
 }
 
 // Usage example
-const originalObj = { a: 1, b: { c: 2 } };
+const originalObj = { a: 1, b: { c: 2 }, d:[1,2,3] };
 const clonedObj = cloneDeep(originalObj);
 console.log(clonedObj); // { a: 1, b: { c: 2 } }

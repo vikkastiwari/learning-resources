@@ -1,0 +1,47 @@
+💁‍♂️ Star Rating
+
+💁‍♂️ Design Pop Over
+
+💁‍♂️ Design Accordion 
+
+💁‍♂️ Design Carousel
+
+💁‍♂️ Design grid using HTML/CSS and Javascript with search and sort, event bubbling (Amazon onsite)
+
+💁‍♂️ Design NavBar
+
+💁‍♂️ Infinite Scroll
+
+💁‍♂️ Typeahead / autocomplete using trie
+
+💁‍♂️ Implement Debounce function
+
+💁‍♂️ Implement tic tac toe
+
+💁‍♂️ Make calendar of any Month like Date Picker
+
+💁‍♂️ Implement throttle function
+
+💁‍♂️ Implement custom Higher Order Functions like Map, Reduce, Filter, Sort 
+
+💁‍♂️ Create an analog clock
+
+💁‍♂️ Make a todo list
+
+💁‍♂️ Create functionality to change all text on page to different translations
+
+💁‍♂️Search and display Giphy images (through Giphy api) in responsive format
+
+💁‍♂️ Build Connect Four
+
+💁‍♂️ Implement Nested Checkboxes (parent is checked, children are checked and vice versa. Must use actual checkbox input) [Google interview]
+
+💁‍♂️ Implement a poll widget
+
+💁‍♂️ Implement Event Emitter
+
+💁‍♂️ Implement promise.all function
+
+💁‍♂️ Flatten nested Javascript Array without using Array.prototype.flat()
+
+💁‍♂️ Implement Sort() function
