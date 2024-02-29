@@ -3,6 +3,10 @@
 #### Road Map
 - [End to End Guide](https://javascript.plainenglish.io/how-to-ace-a-ui-engineer-interview-1cfbdcf2ec83)
 
+#### Concepts
+- OOPS
+- Design Patterns
+
 #### Javascript Fundamentals
  - [30-javascript-interview-questions](https://javascriptcentric.medium.com/top-30-javascript-interview-questions-and-answers-for-2024-7f1e2d1d0638)
  - [100 javascript questions](https://www.youtube.com/watch?v=SFgppU2J8To&t=1s&ab_channel=CodeStepByStep)
