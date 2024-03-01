@@ -17,6 +17,7 @@
 
 .tab.active {
   border-bottom: 1px solid #6e5ff8;
+  color: #6e5ff8;
 }
 
 .tab-panel {

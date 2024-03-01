@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SformComponent } from './components/sform/sform.component';
 import { SlistComponent } from './components/slist/slist.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SformComponent,
-    SlistComponent
+    SlistComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
