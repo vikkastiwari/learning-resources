@@ -124,6 +124,7 @@ function App() {
       <div className='radio-component'>
         <RadioComponent value="label1" isChecked={radioChecked === 'label1'} label={'Test 1'} onChange={onRadioChangeHandler}></RadioComponent>
         <RadioComponent value="label2" isChecked={radioChecked === 'label2'} label={'Test 2'} onChange={onRadioChangeHandler}></RadioComponent>
+        <RadioComponent value="label3" isChecked={radioChecked === 'label3'} label={'Test 3'} onChange={onRadioChangeHandler}></RadioComponent>
       </div>
       <hr />
 
