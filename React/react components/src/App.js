@@ -10,8 +10,45 @@ import DropDown from './components/DropDown/DropDown';
 import Modal from './components/Modal/Modal';
 import Pagination from './components/Pagination/Pagination';
 import ProgressBar from './components/ProgressBar/ProgressBar';
+import Carousel from './components/Carousel/Carousel';
 
 function App() {
+  const tabs = [
+    { label: 'Tab 1', content: 'Content for Tab 1' },
+    { label: 'Tab 2', content: 'Content for Tab 2' },
+    { label: 'Tab 3', content: 'Content for Tab 3' },
+  ];
+
+  const accordionData = [
+    { id: '1', label: 'Tab 1', content: 'Content for Tab 1' },
+    { id: '2', label: 'Tab 2', content: 'Content for Tab 2' },
+    { id: '3', label: 'Tab 3', content: 'Content for Tab 3' },
+  ];
+
+  const options = [
+    { label: 'Option 1', value: 'option1' },
+    { label: 'Option 2', value: 'option2' },
+    { label: 'Option 3', value: 'option3' }
+  ];
+
+  const slides = [
+    {
+      image: 'https://via.placeholder.com/600x300',
+      title: 'Slide 1',
+      description: 'Description for slide 1'
+    },
+    {
+      image: 'https://via.placeholder.com/600x300',
+      title: 'Slide 2',
+      description: 'Description for slide 2'
+    },
+    {
+      image: 'https://via.placeholder.com/600x300',
+      title: 'Slide 3',
+      description: 'Description for slide 3'
+    }
+  ];
+
   const [checked, setIsChecked] = useState(false);
   const [radioChecked, setIsRadioChecked] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -61,24 +98,6 @@ function App() {
     setIsRadioChecked(event.target.value);
     console.log(event.target.value);
   }
-
-  const tabs = [
-    { label: 'Tab 1', content: 'Content for Tab 1' },
-    { label: 'Tab 2', content: 'Content for Tab 2' },
-    { label: 'Tab 3', content: 'Content for Tab 3' },
-  ];
-
-  const accordionData = [
-    { id: '1', label: 'Tab 1', content: 'Content for Tab 1' },
-    { id: '2', label: 'Tab 2', content: 'Content for Tab 2' },
-    { id: '3', label: 'Tab 3', content: 'Content for Tab 3' },
-  ];
-
-  const options = [
-    { label: 'Option 1', value: 'option1' },
-    { label: 'Option 2', value: 'option2' },
-    { label: 'Option 3', value: 'option3' }
-  ];
 
   const handleSelect = (option) => {
     console.log('Selected option:', option);
@@ -131,6 +150,9 @@ function App() {
 
       <ProgressBar progress={progress}></ProgressBar>
       <button onClick={handleProgress}>Make Progress</button>
+      <hr />
+
+      <Carousel slides={slides}></Carousel>
     </div>
   );
 }
