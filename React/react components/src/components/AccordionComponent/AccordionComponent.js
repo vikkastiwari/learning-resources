@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import './AccordionComponent.css';
 
 const Tab = ({ isActive, id, label, onChange }) => {
@@ -39,3 +40,16 @@ const AccordionComponent = ({ item }) => {
 }
 
 export default AccordionComponent;
+
+Tab.propTypes = {
+    isActive: PropTypes.bool.isRequired,
+    onChange: PropTypes.func,
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+};
+  
+Tab.defaultProps = {
+    isActive: false,
+    id: '',
+    label: ''
+};

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import CheckboxComponent from './components/CheckboxComponent/CheckboxComponent';
 import IconComponent from './components/IconComponent/IconComponent';
@@ -9,15 +9,32 @@ import AlertBox from './components/AlertBox/AlertBox';
 import DropDown from './components/DropDown/DropDown';
 import Modal from './components/Modal/Modal';
 import Pagination from './components/Pagination/Pagination';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 
 function App() {
   const [checked, setIsChecked] = useState(false);
   const [radioChecked, setIsRadioChecked] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
   const totalItems = 100;
   const itemsPerPage = 10;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollY = window.scrollY;
+      const progress = (scrollY/scrollHeight) * 100;
+  
+      setProgress(progress);
+    }
+
+    window.addEventListener('scroll',handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  },[])
 
   const openModal = () => {
     setIsOpen(true);
@@ -72,24 +89,34 @@ function App() {
     console.log(page)
   }
 
+  const handleProgress = () => {
+    setProgress(prev => Math.min(prev+10, 100));
+  }
+
   return (
     <div>
       <h1>Tab Component Example <IconComponent size={20} name={'heart'} color={'red'}></IconComponent></h1>
       <TabComponent tabs={tabs} />
+      <hr />
+
       <CheckboxComponent isChecked={checked} label={'Test'} onChange={onChangeHandler}></CheckboxComponent>
+      <hr />
       
       <div className='radio-component'>
         <RadioComponent value="label1" isChecked={radioChecked === 'label1'} label={'Test 1'} onChange={onRadioChangeHandler}></RadioComponent>
         <RadioComponent value="label2" isChecked={radioChecked === 'label2'} label={'Test 2'} onChange={onRadioChangeHandler}></RadioComponent>
       </div>
+      <hr />
 
       <AccordionComponent item={accordionData}></AccordionComponent>
-
+      <hr />
 
       <button onClick={handleToastAlert}>Trigger Alert</button>
       {showAlert && <AlertBox type={'success'} message={'This is success'} autoCloseDelay={3000} onClose={handleCloseAlert}></AlertBox>}
+      <hr />
       
       <DropDown options={options} onSelect={handleSelect} ></DropDown>
+      <hr />
 
       <button onClick={openModal}>Open Modal</button>
       <Modal isOpen={isOpen} onClose={closeModal}>
@@ -97,8 +124,13 @@ function App() {
         <p>This is the content of the modal.</p>
         <button className='modal-btn-close' onClick={closeModal}>Close Modal</button>
       </Modal>
+      <hr />
 
       <Pagination itemsPerPage={itemsPerPage} totalItems={totalItems} onChange={(page) => onPagerChangeHandler(page)}></Pagination>
+      <hr />
+
+      <ProgressBar progress={progress}></ProgressBar>
+      <button onClick={handleProgress}>Make Progress</button>
     </div>
   );
 }
