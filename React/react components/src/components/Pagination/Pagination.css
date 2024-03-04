@@ -1,0 +1,21 @@
+
+.pagination-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.pager button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #919191;
+    cursor: pointer;
+}
+
+.pagination-list li.active button {
+    background-color: orange;
+}

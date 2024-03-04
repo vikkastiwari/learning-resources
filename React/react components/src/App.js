@@ -8,12 +8,16 @@ import AccordionComponent from './components/AccordionComponent/AccordionCompone
 import AlertBox from './components/AlertBox/AlertBox';
 import DropDown from './components/DropDown/DropDown';
 import Modal from './components/Modal/Modal';
+import Pagination from './components/Pagination/Pagination';
 
 function App() {
   const [checked, setIsChecked] = useState(false);
   const [radioChecked, setIsRadioChecked] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const totalItems = 100;
+  const itemsPerPage = 10;
+
 
   const openModal = () => {
     setIsOpen(true);
@@ -64,6 +68,10 @@ function App() {
     // Do something with the selected option
   };
 
+  const onPagerChangeHandler = (page) => {
+    console.log(page)
+  }
+
   return (
     <div>
       <h1>Tab Component Example <IconComponent size={20} name={'heart'} color={'red'}></IconComponent></h1>
@@ -89,6 +97,8 @@ function App() {
         <p>This is the content of the modal.</p>
         <button className='modal-btn-close' onClick={closeModal}>Close Modal</button>
       </Modal>
+
+      <Pagination itemsPerPage={itemsPerPage} totalItems={totalItems} onChange={(page) => onPagerChangeHandler(page)}></Pagination>
     </div>
   );
 }
