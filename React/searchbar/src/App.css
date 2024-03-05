@@ -1,0 +1,9 @@
+.selected-author{
+    font-weight: meidum;  
+    font-size: 21px;
+}
+    
+.author{
+    border: 1px solid #000;
+    cursor:pointer;
+}
