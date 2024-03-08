@@ -48,3 +48,30 @@ const res = Promise.myRace([myPromise1,myPromise2]).then((result) => {
 }).catch((error) => {
     console.log(error);
 });
+
+Function.prototype.myBind = function (context, ...args) {
+    const ogFunction = this;
+    return function (...innerArgs) {
+        return ogFunction.apply(context,args.concat(innerArgs));
+    }
+}
+
+Function.prototype.myCall = function (context,...args) {
+    context = context || window;
+    const uniqueKey = Symbol();
+    context[uniqueKey] = this;
+    const res = context[uniqueKey](...args);
+    delete context[uniqueKey];
+    return res;
+}
+
+function greet(...args){
+    console.log(`Hello ${this.name}, ${args}`);
+}
+
+const person = {
+    name: 'vikas'
+}
+console.log(greet.myBind(person,'Hi','Bolo')('kidhar'));
+console.log(greet.myCall(person,'Hi','Bolo'));
+
