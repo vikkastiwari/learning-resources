@@ -38,8 +38,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className='selected-author'>Selected Author: {selectedAuthor}</div>
-      <input onChange={onInputChange}></input>
+      {selectedAuthor && <div className='selected-author'>Selected Author: {selectedAuthor}</div>}
+      <input onChange={onInputChange} placeholder='type.....'></input>
       {isLoading && <div>Fetching...</div> }
       {data.length ? data.map((author,id) => {
         return (

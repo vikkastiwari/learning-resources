@@ -75,3 +75,23 @@ const person = {
 console.log(greet.myBind(person,'Hi','Bolo')('kidhar'));
 console.log(greet.myCall(person,'Hi','Bolo'));
 
+
+var x = 1;
+setTimeout(() => {
+    let obj = {
+        x : 2,
+        getData: function getData() {
+            return this.x;
+        }
+    }
+    console.log(obj.getData());
+},0);
+
+console.log('-------------------')
+var x1 = 2;
+Promise.resolve(1)
+.then(console.log(x1))
+.then(() => {throw new Error('Error')})
+.catch(() => console.log(3))
+.finally(console.log(4))
+.then(() => console.log(5))
