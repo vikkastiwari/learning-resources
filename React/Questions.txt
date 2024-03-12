@@ -83,3 +83,41 @@ React
 
 10) Can you compare React's Context API with Redux? When would you choose one over the other?
  - Illustrate your understanding of when to use React's Context API or Redux for state management in a React application.
+
+
+--------------Master React Js---------------
+
+ - Diffing Algorithm - it compares virtual dom and real dom and makes the necessary changes
+ - React Fiber - It runs diffing Algorithm in batch wise rather running all at once.
+ - Synthetic Events - React exposes all Dom like apis and handles the same before giving it to browser which makes the react code base cross browser compatible
+ - Hooks Introduced because it simplifies the testing, the logic is not locked, all things with state can be managed using funciton based components.
+
+
+---------------------Widely Asked Questions---------------------------
+- Hooks
+   - useState
+   - useEffect
+   - useContext
+   - useReducer
+   - useMemo
+   - useCallback - is a hook in React that is used to memoize functions, preventing unnecessary re-renders in functional components. 
+   - useRef
+
+- HigherOrderComponents - how, why, when, what
+- LifeCycle Methods of Components - Mounting, Updating, Unmounting
+- State Management - state/props, props drilling, react context
+- Redux/Zustand - RTK
+- Custom Hooks - explain/code
+- Lazy Loading - code spliting, code chunking, suspense
+- Virtual Dom - Reconcilation, React /Fiber - Render
+- SSR vs CSR - SEO/ performance
+- Routing - RBAC - react-router, protected routes, query params, dynamic Routing, wild card routes
+- Testing - React Testing Lib, unit testing
+- Async Task - Promise, async/await, setTimeout, Events, Fetches, Axios
+- Reusability / Modularity / Testability
+- Performance - Webpack Bundler, CDN
+- Rendering
+- SEO
+- Styling - Tailwing, StyleX, Ant UI, Bootstrap, Material UI, etc
+- Shimmering Effect
+- Accessibility

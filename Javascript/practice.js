@@ -95,3 +95,10 @@ Promise.resolve(1)
 .catch(() => console.log(3))
 .finally(console.log(4))
 .then(() => console.log(5))
+
+Function.prototype.customBind = function (context, ...args) {
+    const ogFunction = this;
+    return function(...innerArgs) {
+        return ogFunction.apply(context, args.concat(innerArgs));
+    }
+}
