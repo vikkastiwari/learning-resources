@@ -40,7 +40,7 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><i className="fa-solid fa-cart-shopping"></i></li>
         </ul>
       </div>
     </div>
@@ -1888,7 +1888,7 @@ const RestaurantCard = ({
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-        <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4><i className="fa-solid fa-star"></i>{avgRating}</h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
@@ -1914,11 +1914,11 @@ const Footer = () => {
   return (
     <div className="footer">
       Created By
-      <i class="fa-solid fa-heart"></i>
+      <i className="fa-solid fa-heart"></i>
       <a href="https://www.linkedin.com/in/chetannada/" target="_blank">
-        Chetan Nada
+        vikas
       </a>
-      <i class="fa-solid fa-copyright"></i>
+      <i className="fa-solid fa-copyright"></i>
       {year}
       <strong>
         Food<span>Fire</span>

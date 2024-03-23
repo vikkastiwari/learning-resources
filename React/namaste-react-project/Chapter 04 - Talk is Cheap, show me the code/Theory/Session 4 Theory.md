@@ -107,7 +107,7 @@ A: props stands for properties. Props are arguments passed into React components
 function App() {
   return (
     <div className="App">
-      <Tool name="Chetan Nada" tool="Figma"/> // name and tool are props
+      <Tool name="vikas" tool="Figma"/> // name and tool are props
     </div>
   )
 }

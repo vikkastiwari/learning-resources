@@ -8,9 +8,9 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/chetannada/"
         target="_blank"
-        title="Chetan Nada's Linkedin Profile"
+        title="vikas's Linkedin Profile"
       >
-        Chetan Nada
+        vikas
       </a>
       <i className="fa-solid fa-copyright"></i>
         {year}

@@ -137,7 +137,7 @@ const Header = () => {
             placeholder="Search anything you want..."
           />
           <button type="submit">
-            <i class="fa fa-search"></i>
+            <i className="fa fa-search"></i>
           </button>
         </div>
         <div className="right">
