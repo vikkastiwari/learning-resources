@@ -102,3 +102,48 @@ Function.prototype.customBind = function (context, ...args) {
         return ogFunction.apply(context, args.concat(innerArgs));
     }
 }
+
+
+
+
+
+
+Promise.customAll = function(promises) {
+    return new Promise((resolve, reject) => {
+        let resolvedPromise = [];
+        let counter = promises.length;
+
+        function handlePromise(index, result) {
+            resolvedPromise[index] = result;
+            counter--;
+
+            if(counter === 0){
+                resolve(resolvedPromise);
+            }
+        }
+
+        promises.forEach((promise, index) => {
+            Promise.resolve(promise).then(
+                (result) => handlePromise(index, result),
+                (error) => reject(error),
+            )
+        })
+    })
+}
+
+const myPromise11 = new Promise((resolve) => {
+    setTimeout(() => resolve('Success! 1'), 1000);
+  });
+  
+  const myPromise12 = new Promise((resolve) => {
+    setTimeout(() => resolve('Success! 2'), 1000);
+  });
+  
+  const res1 = Promise.customAll([myPromise1,myPromise2]).then((res) => {
+    console.log(res);
+  }).catch((error) => {
+    console.log(error);
+  })
+
+
+

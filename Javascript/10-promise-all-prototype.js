@@ -1,4 +1,4 @@
-Promise.customAll = function (promises) {
+Promise.prototype.customAll = function (promises) {
   return new Promise((resolve, reject) => {
     const results = [];
     let remainingPromises = promises.length;

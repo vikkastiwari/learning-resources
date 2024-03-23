@@ -121,3 +121,9 @@ React
 - Styling - Tailwing, StyleX, Ant UI, Bootstrap, Material UI, etc
 - Shimmering Effect
 - Accessibility
+
+------------------
+
+Render props
+HOC
+Custom Hooks - useCustomHook

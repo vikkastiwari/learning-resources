@@ -1,4 +1,16 @@
 <!-- <app-sform (guest)="onAdd($event)"></app-sform>
 <app-slist [guestList]="guestList"></app-slist> -->
 
-<app-user></app-user>
+<!-- <app-user></app-user> -->
+
+<!-- form -> pincode <input type="text">
+
+1-> mumbai
+2-> delhi -->
+
+<div>
+    <form [formGroup]="form">
+        <input placeholder="pincode" formControlName="pincode" />
+        <button type="submit" (click)="onSubmit()">Submit</button>
+    </form>
+</div>
