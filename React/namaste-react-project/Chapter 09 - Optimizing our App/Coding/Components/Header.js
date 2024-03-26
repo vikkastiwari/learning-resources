@@ -10,6 +10,7 @@ import { useEffect } from "react";
 const Title = () => (
   <Link to="/">
     <img
+      data-testid="logo"
       className="logo"
       src={FoodFireLogo}
       alt="Food Fire"
@@ -46,7 +47,7 @@ const Header = () => {
       {isLoggedin && <div className="user-name">Hi {getLocalStorage?.userName}!</div>}
 
       <div className="nav-items">
-        <ul>
+        <ul data-testid="nav-items">
           <li>
             <Link to="/">Home</Link>
           </li>

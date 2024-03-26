@@ -20,7 +20,6 @@ const useResData = (API_URL) => {
         throw new Error(err);
       } else {
         const json = await response.json();
-
         // initialize checkJsonData() function to check Swiggy Restaurant data
         async function checkJsonData(jsonData) {
           for (let i = 0; i < jsonData?.data?.cards.length; i++) {
@@ -37,7 +36,6 @@ const useResData = (API_URL) => {
 
         // call the checkJsonData() function which return Swiggy Restaurant data
         const resData = await checkJsonData(json);
-
         // update the state variable restaurants with Swiggy API data
         setAllRestaurants(resData);
         setFilteredRestaurants(resData);

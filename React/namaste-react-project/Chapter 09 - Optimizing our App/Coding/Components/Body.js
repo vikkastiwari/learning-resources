@@ -48,6 +48,7 @@ const Body = () => {
         <input
           type="text"
           className="search-input"
+          data-testid="search-input"
           placeholder="Search a restaurant you want..."
           value={searchText}
           // update the state variable searchText when we typing in input box
@@ -59,6 +60,7 @@ const Body = () => {
         />
         <button
           className="search-btn"
+          data-testid="search-btn"
           onClick={() => {
             // user click on button searchData function is called
             searchData(searchText, allRestaurants);
@@ -73,9 +75,9 @@ const Body = () => {
       {allRestaurants?.length === 0 && FilterRes?.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list">
+        <div className="restaurant-list" data-testid="restaurant-list">
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
-          {(filteredRestaurants === null ? FilterRes : filteredRestaurants).map(
+          {(filteredRestaurants === null ? FilterRes : filteredRestaurants)?.map(
             (restaurant) => {
               return (
                 <Link

@@ -63,7 +63,7 @@ const RestaurantMenu = () => {
       </div>
 
       <div className="restaurant-menu-content">
-        <div className="menu-items-container">
+        <div className="menu-items-container" data-testid="menu-items">
           <div className="menu-title-wrap">
             <h3 className="menu-title">Recommended</h3>
             <p className="menu-count">{menuItems.length} ITEMS</p>
